@@ -1,0 +1,18 @@
+name: Quality check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  static-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Build static site
+        run: node scripts/build.mjs
+      - name: Check JavaScript syntax
+        run: node --check src/scripts/main.js
