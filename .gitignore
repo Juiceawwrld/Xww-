@@ -1,0 +1,12 @@
+# Generated output
+dist/
+
+# Local tooling
+.sites-runtime/
+.DS_Store
+Thumbs.db
+*.log
+
+# Editor settings
+.vscode/
+.idea/

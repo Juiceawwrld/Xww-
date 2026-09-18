@@ -1,0 +1,9 @@
+{
+  "name": "morrow-one",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/build.mjs && node server.js"
+  }
+}
